@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration</title>
+    <link rel="stylesheet" href="/dist/output.css">
+    <link rel="stylesheet" href="index.css">
+
+</head>
+<body class="bg-neutral-200 ">
+<div class=" w-full  flex  flex-col items-center justify-start content-start">
+    <div class="logo my-3 ">
+        <a href="index.html">
+            <img class="w-32" src="/images/ASOS_(retailer)-Logo.wine.png"/></a>
+    </div>
+    <div class="max-w-2xl h-full bg-white ">
+        <div id="info-register" class="flex flex-col gap-5 pr-14 pl-14">
+            <div id="sign" class="flex flex-row justify-around font-sans font-medium my-6">
+                <div class="sign pt-3.5 pr-3.5 pb-3.5 pl-3.5">
+                    <div id="join" class="px-1.5">Join</div>
+                </div>
+                <div class="border-gray-300 border-[1px] border-solid"></div>
+                <div class="sign pt-3.5 pr-3.5 pb-3.5 pl-3.5">
+                    <div id="sign-in" class="px-1.5">Sign In</div>
+                </div>
+
+            </div>
+            <h2 class="text-center my-2.5 font-bold">SIGN UP WITH...</h2>
+            <div id="buttons" class="flex flex-row place-content-around">
+
+                <div class="buttons flex flex-row justify-center border-solid border-[2px] pt-5 pb-5 items-center gap-2 flex-1">
+                    <div class="w-7"><img src="/images/free-icon-google-2504739.png"/></div>
+                    <div>
+                        <button id="google"><p class="font-bold">GOOGLE</p></button>
+                    </div>
+                </div>
+
+                <div class="buttons flex flex-row justify-center border-solid border-[2px]  pt-5 pb-5 items-center gap-2 flex-1">
+                    <div class="w-7"><img src="/images/free-icon-apple-logo-747.png"/></div>
+                    <div>
+                        <button id="apple"><p class="font-bold">APPLE</p></button>
+                    </div>
+                </div>
+                <div class="buttons flex flex-row justify-center border-solid border-[2px] pt-5 pb-5 items-center gap-2 flex-1 ">
+                    <div class="w-7"><img src="/images/free-icon-facebook-5968764.png"/></div>
+                    <div>
+                        <button id="facebook "><p class="font-bold">FACEBOOK</p></button>
+                    </div>
+                </div>
+            </div>
+            <div class="registration-subtitle m-7 ">
+                <p class="font-extralight">Signing up with social is super quick. No extra passwords to remember - no
+                    brain fail. Don't
+                    worry,
+                    we'd never share any of your data or post anything on your behalf #notevil</p>
+            </div>
+
+            <div id="register-form" class="text-center text-center flex flex-col items-center text-center">
+                <h2 class="my-8 font-bold">OR SIGN UP WITH EMAIL</h2>
+                <form id="form"class="flex flex-col gap-4">
+                    <label class="flex justify-start gap-2 text-gray-500 font-bold"> EMAIL ADDRESS:</label>
+                    <div id="tooltip"></div>
+                    <input id="email_address" class="form_input relative py-2.5 pl-9 pr-9 border-[1px] border-solid text-gray-500 border-gray-700" value="" type="text" />
+                    <label class="flex  gap-2 text-gray-500 border-gray-500 font-bold"> FIRST NAME:</label>
+                    <div id="tooltip_name"></div>
+                    <input id="first_name"class="form_input relative py-2.5 pl-9 pr-9  border-[1px] border-solid border-gray-500 font-bold" value="" maxlength="15" type="text"/>
+                    <label class="flex justify-start gap-2 text-gray-500 text-gray-500 font-bold"> LAST NAME:</label>
+                    <div id="tooltip_last_name"></div>
+                    <input id="last_name"class="form_input relative py-2.5 pl-9 pr-9  border-[1px] text-gray-500 border-solid border-gray-700" value=""/>
+                    <label class="flex justify-start gap-2 text-gray-500 border-gray-500 font-bold"> PASSWORD:</label>
+                    <div id="tooltip_password"></div>
+                    <input id="password" class="form_input relative py-2.5 pl-9 pr-9  border-[1px] border-solid border-gray-700 border-gray-500 font-bold"
+                           value=""/>
+                    <div><p>Must be 10 or more characters</p></div>
+                    <div><label class="flex justify-start gap-2 text-gray-500 border-gray-500 font-bold">DATE OF
+                        BIRTH:</label></div>
+                    <div>
+                        <select id="day" class="py-2.5 pl-3 pr-3 border-[2px] border-solid" name="day">
+                            <option value="0">DD</option>
+                        </select>
+                        <select id="month" class="py-2.5 pl-3 pr-3 border-[2px] border-solid" name="month">
+                            <option value="0">Month</option>
+                        </select>
+                        <select id="year" class="py-2.5 pl-3 pr-3 border-[2px] border-solid" name="year">
+                            <option value="0">YYYY</option>
+                        </select>
+                        <p class="text-gray-400">You need to be 16 or over to use ASOS</p>
+                    </div>
+                    <div class="justify-start flex">
+                        <p class="border-gray-500 font-bold text-gray-500">MOSTLY INTERESTED IN</p>
+                    </div>
+                    <div class=" select-category flex  gap-3 justify-between">
+                        <div id="women-select" class="flex justify-between gap-5">
+                            <input type="radio" name="gender" checked/>
+                            <label>Womenswear</label>
+                        </div>
+                        <div id="men-select" class="flex justify-between gap-5">
+                            <input type="radio" name="gender"/>
+                            <label>Menswear</label>
+                        </div>
+
+                    </div>
+                    <div class="flex flex-row justify-start gap-6">
+                        <div class="justify-start flex flex-col">
+                            <div class="justify-start flex">
+                                <p>CONTACT PREFERENCES</p>
+                            </div>
+                            <div>
+                                <p>Tell us which emails you’d like:</p>
+                            </div>
+                        </div>
+                        <div class=" border-[2px] py-2.5 pl-3 pr-3 bg-neutral-300">
+                            <button type="button" class="select_all_btn select-none">SELECT ALL</button>
+                        </div>
+                    </div>
+                    <div id="input_select" class="flex flex-col justify-around">
+                        <div class="flex flex-row justify-between">
+                            <label>Discounts and sales</label><input type="checkbox" class="checkbox-input"/>
+                        </div>
+                        <div class="flex flex-row justify-between">
+                            <label>New stuff</label><input type="checkbox" class="checkbox-input"/>
+                        </div>
+                        <div class="flex flex-row justify-between">
+                            <label>Your exclusives</label><input type="checkbox" class="checkbox-input"/>
+                        </div>
+                        <div class="flex flex-row justify-between">
+                            <label>Asos partners</label><input type="checkbox" class="checkbox-input"/>
+                        </div>
+                    </div>
+                    <div class="btn-join pr-20  pl-4 pt-5 pb-5 border-[2px] border-solid text-center">
+                        <button type="button" id="btn-asos"><p>JOIN ASOS</p></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="index.js"/>
+</body>
+</html>
